@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/concentration/concentration",
     "pages/detaile/detaile",
+    "pages/concentration/concentration",
     "pages/me/me"
   ],
   "window": {
