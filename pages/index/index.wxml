@@ -1,4 +1,7 @@
 <!--index.wxml-->
 <view class="container">
-  首页123
+  <view class="container-title">
+    寻旅
+  </view>
+  <button>点击进入</button>
 </view>
