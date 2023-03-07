@@ -3,5 +3,5 @@
   <view class="container-title">
     寻旅
   </view>
-  <button>点击进入</button>
+  <button bindtap="goin">点击进入</button>
 </view>
