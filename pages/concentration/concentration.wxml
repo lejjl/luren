@@ -1,2 +1,76 @@
 <!--pages/concentration/concentration.wxml-->
-<text>pages/concentration/concentration.wxml</text>
+<view class="container">
+	<!-- 搜索部分 -->
+	<view class="destination">
+		<input type="text" placeholder="筛选目的地" style="margin-left: 10rpx;" bindtap="destination" />
+		<image class="images" src="../../img/sousu.jpg"></image>
+	</view>
+	<!-- 内容部分 -->
+	<view class="content">
+		<view class="title">
+			<view class="titles">
+				<view class="protrude"></view>
+				<view class="concentration">{{contentList[0].title}}</view>
+			</view>
+			<view class="more" bindtap="more">更多</view>
+		</view>
+		<view class="img">
+		<block wx:if="{{show}}">
+			<view class="introduce" wx:for="{{contentList[0].cityList}}" wx:key="*this">
+				<image style="width: 100%; min-width:300rpx;height: 200rpx; border-radius: 5rpx;" src="{{item.img}}"></image>
+				<view>{{item.title}}</view>
+				<view class="text">{{item.introduce}}</view>
+			</view>
+		</block>
+		<block wx:if="{{!show}}">
+			<view class="introduce" wx:for="{{morecontentList}}" wx:key="*this">
+				<image style="width: 100%; min-width:300rpx;height: 200rpx; border-radius: 5rpx;" src="{{item.img}}"></image>
+				<view>{{item.title}}</view>
+				<view class="text">{{item.introduce}}</view>
+			</view>
+		</block>
+		</view>
+</view>
+<view class="content">
+	<view class="title">
+		<view class="titles">
+			<view class="protrude"></view>
+			<view class="concentration">{{contentList[1].title}}</view>
+		</view>
+		<view class="more" bindtap="remore">更多</view>
+	</view>
+	<view class="img" wx:if="{{shows}}">
+		<view class="introduces" wx:for="{{contentList[1].cityList}}" wx:key="*this">
+			<image style="width: 100%; height: 200rpx; border-radius: 5rpx;" src="{{item.img}}"></image>
+			<view>{{item.title}}</view>
+			<view class="text">{{item.introduce}}</view>
+		</view>
+	</view>
+    <view class="img" wx:if="{{!shows}}">
+		<view class="introduces" wx:for="{{remorecontentList}}" wx:key="*this">
+			<image style="width: 100%; height: 200rpx; border-radius: 5rpx;" src="{{item.img}}"></image>
+			<view>{{item.title}}</view>
+			<view class="text">{{item.introduce}}</view>
+		</view>
+	</view>
+</view>
+<view class="content">
+	<view class="title">
+		<view class="titles">
+			<view class="protrude"></view>
+			<view class="concentration">个性化定制</view>
+		</view>
+		<view class="more" bindtap="remores">更多</view>
+	</view>
+	<view class="img">
+		<view class="introduces" style=" position: relative;">
+			<image style="width: 100%; height: 300rpx; border-radius: 5rpx;" src="../../img/1.png"></image>
+			<view class="child">旅游景点</view>
+		</view>
+		<view class="introduce" style=" position: relative;">
+			<image style="width: 95%; height: 300rpx; border-radius: 5rpx;" src="../../img/1.png"></image>
+			<view class="childer">旅游路线</view>
+		</view>
+	</view>
+</view>
+</view>

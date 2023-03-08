@@ -1,1 +1,102 @@
 /* pages/concentration/concentration.wxss */
+.container {
+	padding: 10rpx;
+}
+
+.destination {
+	width: 100%;
+	height: 50rpx;
+	padding: 15rpx 0;
+	border-bottom: 1rpx solid #acacac;
+	display: flex;
+	justify-content: space-between;
+}
+
+.images {
+	width: 57rpx;
+	height: 50rpx;
+}
+
+.content {
+	width: 100%;
+	margin-top: 30rpx;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15rpx;
+}
+
+.titles {
+	display: flex;
+}
+
+.protrude {
+	width: 15rpx;
+	height: 15rpx;
+	background-color: #fcb148;
+	border-radius: 50%;
+	position: relative;
+	top: 40%;
+	margin-right: 15rpx;
+}
+
+.concentration {
+	font-weight: 700;
+}
+
+.more {
+	color: #888888;
+	font-size: 28rpx;
+}
+
+.img {
+	width:100%;
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: flex-start;
+}
+
+.introduce {
+	 flex: 1;
+	 margin-left: 10rpx;
+}
+.introduces {
+	 width: 45%;
+	 margin-left: 10rpx;
+}
+
+.text {
+	font-size: 26rpx;
+	color: #888888;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.child {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 34rpx;
+	position: absolute;
+	left: 20rpx;
+	top: 25rpx;
+	right: 0;
+	bottom: 0;
+}
+
+.childer {
+	color: #000000;
+	font-weight: 700;
+	font-size: 34rpx;
+	position: absolute;
+	left: 20rpx;
+	top: 25rpx;
+	right: 0;
+	bottom: 0;
+}

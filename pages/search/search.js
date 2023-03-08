@@ -5,7 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        date:[],
+        dates:[]
     },
 
     /**
@@ -26,9 +27,21 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-
+        
     },
-
+    
+    bindTimeChange: function(e) {
+        console.log('picker发送选择改变，携带值为', e.detail.value)
+        this.setData({
+          date: e.detail.value
+        })
+      },
+      bindTimeChanges: function(e) {
+        console.log('picker发送选择改变，携带值为', e.detail.value)
+        this.setData({
+          dates: e.detail.value
+        })
+      },
     /**
      * 生命周期函数--监听页面隐藏
      */

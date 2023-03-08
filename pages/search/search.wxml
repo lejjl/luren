@@ -1,2 +1,33 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="container">
+	<view class="explore">探索目的地</view>
+	<view class="destination"><input type="text" placeholder="选择感受" /></view>
+	<view class="destination"><input type="text" placeholder="选择预算" /></view>
+	<view class="section">
+  <!-- <view class="section__title">时间选择器</view> -->
+  <picker mode="time" value="{{date}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      开始日期{{date}}
+    </view>
+  </picker>
+  <view class="section__title">-</view>
+  <picker mode="time" value="{{date}}" start="09:01" end="21:01" bindchange="bindTimeChanges">
+    <view class="picke">
+      结束日期{{dates}}
+    </view>
+  </picker>
+</view>
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <label class="checkbox">
+        <checkbox value="cd1" checked="true"/>个性化定制
+      </label>
+      <label class="checkbox">
+        <checkbox value="cd2" />拒绝个性化定制
+      </label>
+    </view>
+  </view>
+</view>
+<button>开始搜索</button>
+</view>
