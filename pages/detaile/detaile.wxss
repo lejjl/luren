@@ -1,1 +1,41 @@
 /* pages/detaile/detaile.wxss */
+#shuru{
+	width: 80%;
+	height: 60rpx;
+	margin:0 auto;
+}
+.chose{
+	color: black;	
+	text-align: center;
+}
+.int{
+	width: 100%;
+	height: 100%;
+	border: 1rpx  solid #959595;
+	border-radius: 20rpx;
+	background-color: #e8e8e8;
+}
+/* 导航 */
+.switch-hot{
+	width: 90%;
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 50rpx;
+}
+.tab1{
+	height:60rpx;
+	line-height: 60rpx;
+	/* background-color: blanchedalmond; */
+	width: 30%;
+	text-align: center;
+	
+}
+.tupian{
+	width: 20%;
+	height: 100%;
+}
+.text{
+	align-items: center;
+}

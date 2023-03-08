@@ -1,2 +1,28 @@
 <!--pages/detaile/detaile.wxml-->
-<text>pages/detaile/detaile.wxml</text>
+<!-- 搜索 -->
+<view id="shuru">
+	<input type="text" 	placeholder="选择旅游景点" 	class="int" placeholder-class='chose' confirm-type="search"></input>
+</view>
+<!-- 导航 -->
+<view class="switch-hot">
+	<view class="tab1">
+		<!-- <image class="tupian"></image> -->
+		<text class="text"
+      bindtap="tapNav" data-id="1">人均消费</text>
+	</view>
+	<view class="tab1">
+		<!-- <image class="tupian"></image> -->
+		<text class="text"
+      bindtap="tapNav" data-id="1">热门精选</text>
+	</view><view class="tab1">
+		<!-- <image class="tupian"></image> -->
+		<text class="text"
+      bindtap="tapNav" data-id="1">单日可来回</text>
+	</view>
+      <!-- <text class="hot-item {{navActive==2?'hot-item-active':''}}"
+      bindtap="tapNav" data-id="2">热门精选</text>
+      <text class="hot-item {{navActive==3?'hot-item-active':''}}"
+      bindtap="tapNav" data-id="3">单日可来回</text> -->
+</view>
+<!-- 主体 -->
+
