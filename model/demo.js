@@ -34,10 +34,25 @@ export function catalogue() {
       title: "感受导向",
       cityList: [
         {
-          title: "成都",
-          img: "https://i.postimg.cc/1XhQGzPQ/55.png",
-          introduce: "",
+          title: "桂林",
+          img: "https://i.postimg.cc/Wz3029Rt/22.png",
+          introduce: "桂林--水乡柔情",
         },
+		{
+			title: "南京",
+			img: "https://i.postimg.cc/9Xn7dY5t/26.png",
+			introduce: "南京--朦胧古典",
+		  },
+		  {
+			title: "漠河",
+			img: "https://i.postimg.cc/s2mBvp4W/33.png",
+			introduce: "漠河--远离喧嚣",
+		  },
+		  {
+			title: "延边",
+			img: "https://i.postimg.cc/vHncWRvb/39.png",
+			introduce: "延边--精神力量",
+		  },
       ],
     },
   ];
