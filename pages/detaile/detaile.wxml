@@ -25,4 +25,17 @@
       bindtap="tapNav" data-id="3">单日可来回</text> -->
 </view>
 <!-- 主体 -->
-
+<view class="moddel" wx:for="{{scenicDetails}}" wx:key="index">
+	<view class="imge">
+        <image src="{{item.img}}" ></image>
+    </view>
+    <view class="content">
+        <view class="title">{{item.title}}</view>
+        <view class="introduce">{{item.introduce}}</view>
+        <view class="price">门票：免费</view>
+    </view>
+</view>
+<!-- 定制 -->
+<view class="btn">
+    <button>开始定制旅游路线</button>
+</view>

@@ -1,5 +1,5 @@
 // pages/detaile/detaile.js
-// import {scenicDetail} from '../../model/demo'
+import {scenicDetail} from '../../model/demo'
 Page({
 
     /**
@@ -10,13 +10,15 @@ Page({
     },
     // 封装
     getList(){
-        this.setData({scenicDetails:this.scenicDetail(1)})
+        let scenicDetails =   scenicDetail(1)
+        console.log(scenicDetails);
+        this.setData({scenicDetails:scenicDetails})
    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        
+        this.getList()
     },
 
     /**
